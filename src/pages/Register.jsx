@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import register from '../assets/register.jpg'
 const Register = () => {
     const [name,setName] = useState("");
     const [email,setemail] = useState("");
@@ -49,7 +48,11 @@ const Register = () => {
            </div>
            <div className='hidden md:block w-1/2 bg-gray-800'>
            <div className='h-full flex felx-col justify-center items-center'>
-            <img src={register} alt="Login To Account" className='h-[750px] w-full object-cover' />
+            <img
+  src="/assets/Register.jpg"
+  alt="Register"
+  className="h-[750px] w-full object-cover"
+/>
            </div>
            </div>
     </div>
